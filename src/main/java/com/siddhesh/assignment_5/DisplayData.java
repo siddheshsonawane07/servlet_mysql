@@ -17,8 +17,9 @@ public class DisplayData extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment_5", "root","Apple@5044");
+				
+				//change password
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment_5", "root","password");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery(query);
 
